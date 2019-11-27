@@ -19,6 +19,7 @@ Package.onUse(function (api, where) {
   ])
 
   api.use(['accounts-base'], ['client', 'server'], { weak: true })
+  api.use(['aldeed:collection2'], ['client', 'server'], { weak: true })
 
   api.mainModule('client.js', 'client')
   api.mainModule('server.js', 'server')
