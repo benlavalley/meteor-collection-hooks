@@ -8,7 +8,7 @@ Package.describe({
 })
 
 Package.onUse(function (api, where) {
-  api.versionsFrom('1.7.0.5')
+  api.versionsFrom('2.4')
 
   api.use([
     'mongo',
@@ -30,7 +30,7 @@ Package.onUse(function (api, where) {
 Package.onTest(function (api) {
   // var isTravisCI = process && process.env && process.env.TRAVIS
 
-  api.versionsFrom('1.7.0.5')
+  api.versionsFrom('2.4')
 
   api.use([
     'matb33:collection-hooks',

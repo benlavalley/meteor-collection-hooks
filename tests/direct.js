@@ -6,7 +6,7 @@ import { Tinytest } from 'meteor/tinytest';
 // TypeError: Cannot read property '#<Object>' of undefined
 // No idea why...
 
-// ([null, 'direct_collection_test']).forEach(function (ctype) {
+// ([null, 'direct_collectionTest']).forEach(function (ctype) {
 //   Tinytest.add(`direct - hooks should not be fired when using .direct (collection type ${ctype})`, function (test) {
 //     // console.log('-------', ctype)
 
@@ -122,7 +122,7 @@ import { Tinytest } from 'meteor/tinytest';
 // })
 
 [{}, { connection: null }].forEach(function (conntype, i) {
-  [null, 'direct_collection_test_stringid'].forEach(function (ctype) {
+  [null, 'direct_collectionTest_stringid'].forEach(function (ctype) {
     const cname = ctype && (ctype + i)
     Tinytest.add(`direct - update and remove should allow removing by _id string (${cname}, ${JSON.stringify(conntype)})`, function (test) {
       const collection = new Mongo.Collection(cname, conntype)
